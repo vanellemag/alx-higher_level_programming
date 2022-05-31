@@ -13,4 +13,3 @@ if (num < 5 and number >= 0):
 if (num < 5 and number < 0):
     print("Last digit of", end=""),
     print("{} is -{} and is less than 6 and not 0".format(number, num))
-print("\n")
