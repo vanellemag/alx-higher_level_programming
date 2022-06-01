@@ -6,4 +6,4 @@ for i in range(0, 9):
                 print("{}{}".format(i, j + 1), end=", ")
             elif i < 2:
                 print("{}{}".format(i, j), end=", ")
-print("{}\n".format(89))
+print("{}".format(89))
