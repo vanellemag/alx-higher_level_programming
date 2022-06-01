@@ -1,2 +1,2 @@
-#!/usr/bin/bash
-python3 $COD
+#!/usr/bin/python3
+import eastereg
