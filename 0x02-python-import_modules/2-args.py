@@ -3,7 +3,7 @@ from sys import argv
 if __name__ == "__main__":
     n = len(argv)
     if (n == 1):
-        print("0 argumentss.")
+        print("0 argument.")
     else:
         print("{:d} arguments:".format(n))
         for i in range(1, n):
