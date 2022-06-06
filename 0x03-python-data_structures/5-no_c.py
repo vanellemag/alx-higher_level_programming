@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    c = "c"
-    t = "C"
-    for i in range(len(my_string)):
-        my_string.remove(c)
-        my_string.remove(t)
-    return(my_string)
+    my_str = list(my_string)
+    for i in range(0, len(my_str)):
+        if str(my_str[i]) == "c" or str(my_str[i]) == "C":
+            my_str.pop(i)
+    return(my_str)
