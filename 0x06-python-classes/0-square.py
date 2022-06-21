@@ -9,13 +9,8 @@ Todo:
     ..Google python Style Guide:
         http://google.github.io/styleguide/pyguide.html
 """
+
+
 class Square:
-    """ Empty class Square that defines a square
-    Note:
-        Do not include attributes
-    Args:
-        No arguments
-    Attributes:
-        None
-"""
+    """ Empty class Square that defines a squareNote"""
     pass
