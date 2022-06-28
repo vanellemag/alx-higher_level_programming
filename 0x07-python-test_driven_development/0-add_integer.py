@@ -8,7 +8,7 @@ b must be an integer or float"""
 
 def add_integer(a, b=98):
     """
-    Function that adds 2 integers 
+    Function that adds 2 integers
     """
 
     try:
