@@ -50,13 +50,15 @@ class Rectangle:
         else:
             return 2 * (self._width + self._height)
 
-    def printe(self, width, height):
+    def __str__(self):
         if self._width == 0 or self._height == 0:
-            str('')
+            str()
         else:
-            for i in range(self._width):
-                for j in range(self._height):
-                    str('#')
+            for i in range(self._height):
+                for j in range(self._width):
+                   print(str('#'), end="")
+                print()
+            return str()
 
     def __repr__(self):
         return repr()
