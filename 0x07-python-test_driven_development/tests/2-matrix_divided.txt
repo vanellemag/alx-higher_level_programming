@@ -1,0 +1,28 @@
+test
+====
+
+>>> matrix_div = __import__('2-matrix_divided').matrix_divided
+>>> try:
+...    matrix = [[1, 2, 3], [4, 5, 6]]
+...    print(matrix_div(matrix, 3))
+... except TypeError:
+...    raise
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+>>> try:
+...    matrix = [[1, 2, 3],[4, 2]]
+...    print(matrix_div(matrix, 2))
+... except Exception as e:
+...    print(e)
+Each row of the matrix must have the same size
+>>> try:
+...   mat = [[2, 3],[5, 4]]
+...   print(matrix_div(mat, 'a'))
+... except Exception as e:
+...   print(e)
+div must be a number
+>>> try:
+...   matr = [[2, 3],[1, 6]]
+...   print(matrix_div(matr, 0))
+... except Exception as e:
+...   print(e)
+division by zero
