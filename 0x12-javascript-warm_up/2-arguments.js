@@ -2,7 +2,7 @@
 
 import {argv} from 'node:process';
 
-if ( process.argv[2] !== null ) 
+if ( process.argv[1] !== null ) 
 { 
 	console.log('Argument found'); 
 } 
