@@ -2,8 +2,8 @@
   "name": "0x12-javascript-warm_up",
   "version": "1.0.0",
   "description": "This project talks Java Script.",
-  "main": "0-javascript_is_amazing.js",
-  "type": "module",
+  "main": "",
+  "type": "commonJS",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

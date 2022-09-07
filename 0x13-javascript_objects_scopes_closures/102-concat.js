@@ -1,7 +1,7 @@
 #!/usr/bin/node
-import node;
-//import { } from 'node:process';
-const concat = require('concat-files');
+import { } from 'node:process';
+
+const concat = require('./concat-files');
 
 concat([
   'process.argv[2]',
