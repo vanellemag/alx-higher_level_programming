@@ -1,19 +1,20 @@
 #!/usr/bin/node
 
-import { argv } from 'node:process'
+import { } from 'node:process';
 
 let a, b;
 
-function add(a, b) {
-	if ( a && b ) { 
-		console.log(a + b); 
-	}
+function add (a, b) {
+  if (a && b) {
+    console.log(a + b);
+  }
 }
-
-if ( process.argv[1] !== null && process.argv[2] !== null ) { 
-	a = parseInt(process.argv[1]);
-	b = parseInt(process.argv[2]);
-	if ( a && b ) { 
-		add(a, b);
-	} 
+if (process.argv[2] && process.argv[3]) {
+  a = parseInt(process.argv[2]);
+  b = parseInt(process.argv[3]);
+  if (a && b) {
+    add(a, b);
+  }
+} else {
+  console.log('NaN');
 }

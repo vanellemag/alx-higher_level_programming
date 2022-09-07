@@ -1,12 +1,8 @@
 #!/usr/bin/node
+import { } from 'node:process';
 
-import {argv} from 'node:process';
-
-if ( process.argv[1] !== null ) 
-{ 
-	console.log('Argument found'); 
-} 
-else 
-{ 
-	console.log('No argument'); 
+if (process.argv[2]) {
+  console.log('Argument found');
+} else {
+  console.log('No argument');
 }

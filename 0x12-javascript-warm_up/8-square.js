@@ -1,23 +1,19 @@
 #!/usr/bin/node
 
-import { argv } from 'node:process'
+import { } from 'node:process';
 
-let n = process.argv[1];
-let m, i;
+let n = parseInt(process.argv[2]);
+let i, j;
+let m = '';
 
-m = 'X';
-if ( n !== null ) { 
-	if ( parseInt(n) ) { 
-		i = parseInt(n);
-		n = i;
-		while ( n > 0 ) { 
-			while ( i > 0 ) { 
-				console.log(m);
-				i--; 
-			}
-			n--; 
-		} 
-	} else { 
-		console.log('Missing number of occurrences'); 
-	} 
+if (n) {
+  for (j = n; j > 0; j--) {
+    for (i = n; i > 0; i--) {
+      m = 'X' + m;
+    }
+    console.log(m);
+    m = '';
+  }
+} else {
+  console.log('Missing size');
 }

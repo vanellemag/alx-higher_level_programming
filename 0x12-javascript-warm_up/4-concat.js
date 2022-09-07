@@ -1,15 +1,13 @@
 #!/usr/bin/node
 
-import { argv } from 'node:process'
+import { } from 'node:process';
 
-if ( process.argv[1] !== null ) { 
-	if ( process.argv[2] !== null ) {
-	console.log(process.argv[1] + ' is ' + process.argv[2]); 
-	} else {
-		console.log(process.argv[1] + ' is undefined'); 
-	}
+if (process.argv[2]) {
+  if (process.argv[3]) {
+    console.log(process.argv[2] + ' is ' + process.argv[3]);
+  } else {
+    console.log(process.argv[2] + ' is undefined');
+  }
 } else {
-	console.log('undefined is ' + process.arg[2]); 
+  console.log('undefined is undefined');
 }
-if (process.argv[1] === null && process.argv[2] === null) {
-	console.log('undefined is undefined');

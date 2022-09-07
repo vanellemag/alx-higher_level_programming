@@ -1,20 +1,23 @@
 #!/usr/bin/node
 
-import { argv } from 'node:process'
+import { } from 'node:process';
 
 let a, n;
 
-a = process.argv[1];
-n = parseInt(a);i
+a = process.argv[2];
+n = parseInt(a);
 
 function facto(n) {
-	if ( n === 0 || ( n === 1 ) ) { 
-		console.log(1); 
-	} else { 
-		console.log(n * facto(n - 1)); 
-	}
+  if (n === 0 || (n === 1)) {
+    return(1);
+  } else {
+    return(n * facto(n - 1));
+  }
 }
 
-if ( a !== null && n ) { 
-	facto(n); 
+if (a && n ) {
+  console.log(facto(n));
+}
+if (!a) {
+  console.log(1);
 }
